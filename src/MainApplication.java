@@ -1,7 +1,122 @@
+import java.util.Scanner;
+
 public class MainApplication {
+    public static void main(String[] args) {
+
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("""
+                Welcome to diary app! Start by introducing yourself. Happy journaling!
+                
+                1  ->  Create Diary
+                2  ->  Unlock Diary
+                3  ->  Find Entry by Id
+                4  ->  Add Entry
+                5  ->  Delete Entry
+                6  ->  Update Entry
+                7  ->  Lock Diary
+                """);
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private static Diary diary;
 
-    public static void main(String[] args) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         diary = new Diary("thetosinfaith","4040");
 
         diary.unlockDiary("4040");

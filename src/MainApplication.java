@@ -17,6 +17,8 @@ public class MainApplication {
                 7  ->  Lock Diary
                 """);
 
+            switch (int){
+
 
     }
 

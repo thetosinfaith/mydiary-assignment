@@ -6,6 +6,8 @@ public class MainApplication {
 
         diary.unlockDiary("4040");
 
+        System.out.println("Create a new diary entry: ");
+
         String title = "Introduction to Programming";
         String body = "Welcome to Java 101";
 

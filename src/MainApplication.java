@@ -9,7 +9,7 @@ public class MainApplication {
         System.out.println("Create a new diary entry: ");
         System.out.println("Enter title: ");
 
-        String title = "Introduction to Programming";
+        String title = "";
         String body = "Welcome to Java 101";
 
         diary.createEntry(title, body);

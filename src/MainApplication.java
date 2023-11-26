@@ -2,7 +2,7 @@ public class MainApplication {
     private static Diary diary;
 
     public static void main(String[] args) {
-        diary = new Diary("thetosinfaith","29652628292");
+        diary = new Diary("thetosinfaith","4040");
 
         diary.unlockDiary("4040");
 
@@ -11,9 +11,10 @@ public class MainApplication {
 
         diary.createEntry(title, body);
 
-        Entry foundEntry = diary.findEntryById(1);
+        Entry foundEntry = diary.findEntryById(0);
 
         System.out.println(foundEntry.getBody());
 
     }
+
 }

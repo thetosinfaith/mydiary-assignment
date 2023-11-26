@@ -39,7 +39,7 @@ public class DiaryTest {
 
             assertEquals(1, user.getDiarySize());
 
-            user.deleteEntry(1);
+            user.deleteEntry(0);
             assertEquals(0, user.getDiarySize());
         }
         @Test
@@ -50,7 +50,7 @@ public class DiaryTest {
 
             assertEquals(1, user.getDiarySize());
 
-            Entry foundEntry = user.findEntryById(1);
+            Entry foundEntry = user.findEntryById(0);
             assertNotNull(foundEntry);
             assertEquals("Hello World",foundEntry.getBody());
         }
@@ -69,14 +69,14 @@ public class DiaryTest {
 
             assertEquals(1, user.getDiarySize());
 
-            Entry foundEntry = user.findEntryById(1);
+            Entry foundEntry = user.findEntryById(0);
             assertNotNull(foundEntry);
             assertEquals("Hello World",foundEntry.getBody());
 
             String newBody = "I now write Java";
-            user.updateEntry(1,null,newBody);
+            user.updateEntry(0,null,newBody);
 
-            Entry updatedEntry = user.findEntryById(1);
+            Entry updatedEntry = user.findEntryById(0);
             assertNotNull(updatedEntry);
             assertEquals("I now write Java",updatedEntry.getBody());
             assertEquals("My First Line of code",updatedEntry.getTitle());

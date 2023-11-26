@@ -2,7 +2,7 @@ public class MainApplication {
     private static Diary diary;
 
     public static void main(String[] args) {
-        diary = new Diary("Legends","4040");
+        diary = new Diary("thetosinfaith","29652628292");
 
         diary.unlockDiary("4040");
 

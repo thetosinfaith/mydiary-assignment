@@ -60,8 +60,7 @@ public class Diary {
             foundEntry.setBody(body);
         }
 
-        int listPosition = id - 1;
-        DearDiary.set(listPosition, foundEntry);
+        DearDiary.set(id, foundEntry);
     }
 
     public void deleteEntry(int id) {

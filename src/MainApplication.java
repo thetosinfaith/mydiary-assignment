@@ -7,16 +7,22 @@ public class MainApplication {
         diary.unlockDiary("4040");
 
         System.out.println("Create a new diary entry: ");
-        System.out.println("Enter title: ");
 
-        String title = "";
-        String body = "Welcome to Java 101";
+        String title = "Enter title: ";
+        String body = "Enter body: ";
 
         diary.createEntry(title, body);
 
+        System.out.println("Enter entry ID to find: ");
         Entry foundEntry = diary.findEntryById(0);
 
         System.out.println(foundEntry.getBody());
+
+        System.out.println("""
+                Entry found:
+                Title: [Title of the Found Entry]
+                Body: [Body Content of the Found Entry]
+                """);
 
     }
 

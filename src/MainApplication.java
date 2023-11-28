@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class MainApplication {
+    private static Diary diary;
     public static void main(String[] args) {
 
-        Scanner userInput = new Scanner(System.in);
-
+        Scanner input = new Scanner(System.in);
         System.out.println("""
                 Welcome to diary app! Start by introducing yourself. Happy journaling!
                 
@@ -17,10 +17,29 @@ public class MainApplication {
                 7  ->  Lock Diary
                 """);
 
-            switch (int){
+        char userInput = 'A';
+
+        switch (userInput){
+            case '1' -> {
+                System.out.print("Choose a username for your new account: ");
+                String username = input.nextLine();
+
+                System.out.print("Now, let's set up a password. For security, choose a secure password with letters, numbers, and special characters: ");
+                String password = input.nextLine();
+
+                diary = new Diary("thetosinfaith","4040");
+            }
 
 
-    }
+
+
+                System.out.println("Please provide your username and password to access your account.");
+
+                diary = new Diary("thetosinfaith","4040");
+            }
+
+
+        }
 
 
 
@@ -119,7 +138,6 @@ public class MainApplication {
 
 
 
-        diary = new Diary("thetosinfaith","4040");
 
         diary.unlockDiary("4040");
 

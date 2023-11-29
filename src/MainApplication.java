@@ -28,7 +28,22 @@ public class MainApplication {
                 String password = input.nextLine();
 
                 diary = new Diary("thetosinfaith","4040");
+
+                break;
             }
+
+            switch (userInput){
+                case '2' ->{
+                    System.out.print("Sure, to unlock, what's your diary password? ");
+                    String password = input.nextLine();
+
+                    diary.unlockDiary("4040");
+
+                    break;
+                }
+
+
+                "And could you enter your account's password to unlock it?"
 
 
 
